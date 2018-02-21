@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.body {
+  flex-direction: row;
+}
+
+.box {
+  background-color: floralwhite;
+  border: 3px solid teal;
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+}
+
+.other-box {
+  background-color: floralwhite;
+  border: 3px solid teal;
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+}
+
+.Section-Header {
+  color: Teal;
+  font-size: 1.25em;
+  font-family: 'Roboto Slab', serif;
+}
+
+.Header {
+  color: Teal;
+  text-emphasis: bold;
+  font-size: 1.1em;
+  font-family: 'Vast Shadow', serif;
+}
+
+.NewItem-Header {
+  color: teal;
+  font-size: 1em;
+  text-align: center;
+}
