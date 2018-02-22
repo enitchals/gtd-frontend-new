@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Note from './Note';
 import NewNote from './NewNote';
 
 export default class Notes extends Component {
@@ -8,15 +9,12 @@ export default class Notes extends Component {
     }
     render() {
         const notes = this.props.notes.map(note =>
-            <div>
-                <p className="NoteTitle">{note.title}</p>
-                <p className="NoteText">{note.note}</p>
-            </div>
+            <Note note={note} key={note._id}/>
         )
         return (
         <div>
-            <h1>Notes:</h1>
-            <ul>{notes}</ul>
+            <div className="Section-Header">Notes:</div>
+            {notes}
             <NewNote appState={this.props.appState} setAppState={this.props.setAppState}/>
         </div>
         )

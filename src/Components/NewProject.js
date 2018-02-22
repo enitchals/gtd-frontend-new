@@ -35,9 +35,9 @@ export default class NewProject extends Component {
     render() {
         return (
             <div className="newProject">
-                <input type="text" onChange={this.projectHandler} placeholder="project title" value={this.state.project}/><br/>
+                <input className="input" type="text" onChange={this.projectHandler} placeholder="project title" value={this.state.project}/><br/>
                 <textarea className="textarea" onChange={this.memoHandler} placeholder="note" value={this.state.memo}/><br/>
-                <button onClick={this.submitHandler}>Save</button>
+                <button className="submit"  onClick={this.submitHandler}>Save</button>
             </div>
         )
     }

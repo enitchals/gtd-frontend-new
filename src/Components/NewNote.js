@@ -34,9 +34,9 @@ export default class NewNote extends Component {
     render() {
         return (
             <div className="newNote">
-                <input type="text" onChange={this.titleHandler} placeholder="title" value={this.state.title}/><br/>
+                <input className="input" type="text" onChange={this.titleHandler} placeholder="title" value={this.state.title}/><br/>
                 <textarea className="textarea" onChange={this.memoHandler} placeholder="note" value={this.state.memo}/><br/>
-                <button onClick={this.submitHandler}>Save</button>
+                <button className="submit" onClick={this.submitHandler}>Save</button>
             </div>
         )
     }

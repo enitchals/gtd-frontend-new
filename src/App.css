@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: flex;
+  background-color: paleturquoise;
 }
 
 .body {
@@ -9,33 +10,120 @@
 
 .box {
   background-color: floralwhite;
-  border: 3px solid teal;
+  border: 5px solid slateblue;
   margin: 0px 10px 10px 10px;
   padding: 10px;
+  border-radius: 20px;
 }
 
-.other-box {
-  background-color: floralwhite;
-  border: 3px solid teal;
-  margin: 20px 10px 10px 10px;
-  padding: 10px;
+.card {
+  background-color: white;
+  border: 3px solid darkslateblue;
+  padding: 20px;
+  margin: 20px 10px;
+  border-radius: 20px;
 }
 
 .Section-Header {
-  color: Teal;
-  font-size: 1.25em;
+  color: darkslateblue;
+  font-size: 1.75em;
   font-family: 'Roboto Slab', serif;
 }
 
 .Header {
-  color: Teal;
-  text-emphasis: bold;
-  font-size: 1.1em;
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 2em;
   font-family: 'Vast Shadow', serif;
 }
 
 .NewItem-Header {
-  color: teal;
+  color: slateblue;
   font-size: 1em;
   text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-basis: 20%;
+}
+.wide-column{
+  flex-basis: 40%;
+}
+
+.SingleTask{}
+
+.SingleEvent{}
+
+.SingleNote{}
+
+.SingleProject{}
+
+.Timestamp{
+  color: darkslateblue;
+  font-weight: bold;
+  text-align: left;
+}
+
+.CardTitle{
+  font-weight: bold;
+  color: slateblue;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.CardMemo{
+  color: darkslateblue;
+  font-size: 1em;
+  text-align: left;
+}
+
+.TaskComplete {
+  border: none;
+  background-color: slateblue;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  height: 45;
+  width: 45;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+.input {
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid slateblue;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.narrow-input {
+  width: 50%;
+}
+
+.textarea {
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid slateblue;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.submit {
+  border: none;
+  background-color: slateblue;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 5px;
 }

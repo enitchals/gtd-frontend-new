@@ -36,9 +36,9 @@ export default class NewTask extends Component {
     render() {
         return (
             <div className="newTask">
-                <input type="text" onChange={this.taskHandler} placeholder="task" value={this.state.task}/><br/>
+                <input className="input" type="text" onChange={this.taskHandler} placeholder="task" value={this.state.task}/><br/>
                 <textarea className="textarea" onChange={this.memoHandler} placeholder="note" value={this.state.memo}/><br/>
-                <button onClick={this.submitHandler}>Save</button>
+                <button className="submit"  onClick={this.submitHandler}>Save</button>
             </div>
         )
     }

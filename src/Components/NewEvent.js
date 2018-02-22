@@ -44,11 +44,11 @@ export default class NewEvent extends Component {
     render() {
         return (
             <div className="newEvent">
-                <input type="text" onChange={this.eventHandler} placeholder="event" value={this.state.event}/><br/>
+                <input className="input" type="text" onChange={this.eventHandler} placeholder="event" value={this.state.event}/><br/>
                 <textarea className="textarea" onChange={this.memoHandler} placeholder="note" value={this.state.memo}/><br/>
-                <input type="date" onChange={this.dateHandler} value={this.state.date}/><br/>
-                <input type="time" onChange={this.timeHandler} value={this.state.time}/><br/>
-                <button onClick={this.submitHandler}>Save</button>
+                    <input className="input narrow-input" type="date" onChange={this.dateHandler} value={this.state.date}/><br/>
+                    <input className="input narrow-input" type="time" onChange={this.timeHandler} value={this.state.time}/><br/>
+                <button className="submit"  onClick={this.submitHandler}>Save</button>
             </div>
         )
     }
