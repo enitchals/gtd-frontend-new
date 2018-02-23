@@ -45,10 +45,11 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div className="login">
-                <input type="text" onChange={this.emailHandler} placeholder="email" value={this.state.email}/><br/>
-                <input type="text" onChange={this.passwordHandler} placeholder="password" value={this.state.password}/><br/>
-                <button onClick={this.login}>Login</button>
+            <div className="card">
+                <div className="CardTitle Center">Login:</div>
+                <input className="input" type="text" onChange={this.emailHandler} placeholder="email" value={this.state.email}/><br/>
+                <input className="input" type="text" onChange={this.passwordHandler} placeholder="password" value={this.state.password}/><br/>
+                <button className="submit" onClick={this.login}>Login</button>
             </div>
         )
     }

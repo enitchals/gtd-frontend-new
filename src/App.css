@@ -86,6 +86,10 @@
   text-align: left;
 }
 
+.Center {
+  text-align: center;
+}
+
 .TaskComplete {
   border: none;
   background-color: slateblue;
@@ -103,11 +107,7 @@
   margin: 5px;
   border: 3px solid slateblue;
   border-radius: 5px;
-  width: 80%;
-}
-
-.narrow-input {
-  width: 50%;
+  width: 60%;
 }
 
 .textarea {
@@ -115,7 +115,7 @@
   margin: 5px;
   border: 3px solid slateblue;
   border-radius: 5px;
-  width: 80%;
+  width: 60%;
 }
 
 .submit {
@@ -126,4 +126,11 @@
   font-size: 1em;
   border-radius: 5px;
   padding: 5px;
+}
+
+.GuestView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 35%;
 }

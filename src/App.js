@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+import Header from './Components/Header';
 import Home from './Components/Home';
+import GuestView from './Components/GuestView';
+
 import './App.css';
 
 class App extends Component {
@@ -10,17 +11,12 @@ class App extends Component {
     };
 
   render() {
-    const guestView = (
-      <div>
-        <Login appState={this.props.appState} setAppState={this.props.setAppState}/>
-        <SignUp/>
-      </div>
-    );
-    
+    const guestView = <GuestView appState={this.props.appState} setAppState={this.props.setAppState}/>
     const home = <Home appState={this.props.appState} setAppState={this.props.setAppState}/>
 
     return (
-      <div className="App">
+      <div className="App column">
+        <Header/>
         {this.props.appState.userID === "" ? guestView : home}
       </div>
     );

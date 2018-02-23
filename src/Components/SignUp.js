@@ -44,11 +44,12 @@ export default class SignUp extends Component {
 
     render() {
         return (
-            <div className="SignUp">
-                <input type = "text" onChange = {this.emailHandler} placeholder="email" value = {this.state.email}/><br/>
-                <input type = "text" onChange = {this.nameHandler} placeholder="name" value = {this.state.name} /><br/>
-                <input type = "text" onChange = {this.passwordHandler} placeholder="password" value = {this.state.password} /><br/>
-                <button onClick = {this.signUp}>Sign Up</button>
+            <div className="card">
+                <div className="CardTitle Center">Sign Up:</div>
+                <input className="input" type = "text" onChange = {this.emailHandler} placeholder="email" value = {this.state.email}/><br/>
+                <input className="input" type = "text" onChange = {this.nameHandler} placeholder="name" value = {this.state.name} /><br/>
+                <input className="input" type = "text" onChange = {this.passwordHandler} placeholder="password" value = {this.state.password} /><br/>
+                <button className="submit" onClick = {this.signUp}>Sign Up</button>
             </div>
         )
     }
